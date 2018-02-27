@@ -1,10 +1,9 @@
 <?php
 
-
 /**
 * 
 */
-class encodeAes256cbcPkcs5
+class EncodeAes256CBCPkcs5
 {
     protected $textToEncode;
     protected $key;
