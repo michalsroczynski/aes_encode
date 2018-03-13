@@ -8,6 +8,9 @@ class EncodeAes256CBCPkcs5
     protected $textToEncode;
     protected $key;
     
+    /**
+    *   key - 64 characters hexadecimal string
+    */
     function __construct($textToEncode, $key)
     {
         $this->textToEncode = $textToEncode;
