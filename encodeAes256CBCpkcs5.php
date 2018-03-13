@@ -8,10 +8,6 @@ class EncodeAes256CBCPkcs5
     protected $textToEncode;
     protected $key;
     
-    /*
-    * @param type $textToEncode
-    * @param type $key
-    */
     function __construct($textToEncode, $key)
     {
         $this->textToEncode = $textToEncode;
@@ -31,9 +27,6 @@ class EncodeAes256CBCPkcs5
         return urlencode(base64_encode($encryptedText));
     }
 
-    /*
-    * 
-    */
     private function keyConvert()
     {
         return pack('H*', $this->key);
